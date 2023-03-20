@@ -1,3 +1,5 @@
+package persons;
+
 import enums.EnrollmentType;
 import enums.StudentType;
 
@@ -10,6 +12,8 @@ public class Student {
     public EnrollmentType enrollmentType;
     public List<Double> grades;
     public double averageGrade;
+    public char letterGrade;
+    public double gpa;
 
     public Student(String name, StudentType studentType, EnrollmentType enrollmentType) {
         this.name = name;
@@ -48,6 +52,22 @@ public class Student {
 
     public void setGrades(List<Double> grades) {
         this.grades = grades;
+    }
+
+    public char getLetterGrade(double averageGrade) {
+        return letterGrade;
+    }
+
+    public void setLetterGrade(char letterGrade) {
+        this.letterGrade = letterGrade;
+    }
+
+    public double getGpa(char letterGrade, StudentType studentType) {
+        return gpa;
+    }
+
+    public void setGpa(double gpa) {
+        this.gpa = gpa;
     }
 
     public double getAverageGrade() {
