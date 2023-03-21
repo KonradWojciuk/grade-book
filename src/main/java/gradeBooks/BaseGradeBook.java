@@ -165,7 +165,7 @@ public abstract class BaseGradeBook {
         return 0;
     }
 
-    public void calculateStatistic() {
+    public void calculateStatistics() {
         double allStudentsPoints = 0d;
         double campusPoints = 0d;
         double nationalPoints = 0d;

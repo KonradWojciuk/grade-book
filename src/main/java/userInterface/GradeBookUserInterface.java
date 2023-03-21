@@ -4,7 +4,6 @@ import enums.EnrollmentType;
 import enums.StudentType;
 import gradeBooks.BaseGradeBook;
 import persons.Student;
-import userInterface.StartingUserInterface;
 
 import java.util.Scanner;
 
@@ -41,7 +40,7 @@ public class GradeBookUserInterface {
         else if (command.startsWith("add"))
             addStudentCommand(command);
         else if (command.startsWith("remove"))
-            removeStudentComand(command);
+            removeStudentCommand(command);
         else if (command.equals("list"))
             listCommand();
         else if (command.equals("statistic all"))
@@ -119,7 +118,7 @@ public class GradeBookUserInterface {
         System.out.printf("Added %s to the grade book.%n", name);
     }
 
-    public static void removeStudentComand(String command) {
+    public static void removeStudentCommand(String command) {
         String[] parts = command.split(" ");
         if (parts.length != 2) {
             System.out.println("Command not valid, Remove requires a name.");
@@ -136,7 +135,7 @@ public class GradeBookUserInterface {
     }
 
     public static void statisticCommand() {
-        baseGradeBook.calculateStatistic();
+        baseGradeBook.calculateStatistics();
     }
 
     public static void studentStatisticCommand(String command) {
