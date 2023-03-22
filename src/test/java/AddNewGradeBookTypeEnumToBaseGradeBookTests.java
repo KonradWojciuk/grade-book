@@ -4,7 +4,9 @@ import org.apache.commons.lang3.EnumUtils;
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.beans.PropertyDescriptor;
 import java.lang.reflect.Field;
+import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -68,10 +70,10 @@ public class AddNewGradeBookTypeEnumToBaseGradeBookTests {
     public void testAddPropertyTypeToBaseGradeBook() throws Exception {
         // Get property Type from BaseGradeBook
         Class<BaseGradeBook> baseGradeBookClass = BaseGradeBook.class;
-        Field typeField = baseGradeBookClass.getDeclaredField("type");
+        Field typeProperty = baseGradeBookClass.getDeclaredField("type");
 
         // Test that the property Type exists in BaseGradeBook
-        Assert.assertNotNull(typeField);
+        Assert.assertNotNull(typeProperty);
 
         // Get GradeBookType Enum from enums.GradeBookType
         Class<?> gradeBookType = null;
@@ -81,8 +83,20 @@ public class AddNewGradeBookTypeEnumToBaseGradeBookTests {
         catch (ClassNotFoundException exception) {
             Assert.fail("GradeBookType enum not found.");
         }
-        Assert.assertEquals(typeField.getType(), gradeBookType);
+        Assert.assertEquals(typeProperty.getType(), gradeBookType);
 
         // Test that the property Type is of type GradeBookType
+        Assert.assertSame("`GradeBook.GradeBooks.BaseGradeBook` contains a property `Type` but it is not of type `GradeBookType`.",
+                typeProperty.getType(), gradeBookType);
+
+        // Test that the property Type's getter is public
+        Assert.assertTrue("`GradeBook.GradeBooks.BaseGradeBook` contains a property `Type` but it's getter is not `public`.",
+                Modifier.isPublic(typeProperty.getModifiers()));
+
+        // Test that the property Type's setter is public
+        PropertyDescriptor propertyDescriptor = new PropertyDescriptor("type", baseGradeBookClass);
+        Method setMethod = propertyDescriptor.getWriteMethod();
+        Assert.assertTrue("`GradeBook.GradeBooks.BaseGradeBook` contains a property `Type` but it's setter is not `public`.",
+                setMethod != null && setMethod.getModifiers() == Modifier.PUBLIC);
     }
 }

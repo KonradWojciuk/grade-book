@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88fab019-5ea1-42e5-95e3-20023c7abd9c" name="Changes" comment="added the addition of a standard gradebook">
-      <change afterPath="$PROJECT_DIR$/src/main/java/gradeBooks/RankedGradeBook.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/AddNewGradeBookTypeEnumToBaseGradeBookTests.java" afterDir="false" />
+    <list default="true" id="88fab019-5ea1-42e5-95e3-20023c7abd9c" name="Changes" comment="Adding ranked grade book and adding some unit tests">
+      <change afterPath="$PROJECT_DIR$/src/test/java/AddMultipleGradeBookTypeSupportToStartingUserInterfaceTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gradeBooks/BaseGradeBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gradeBooks/BaseGradeBook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/userInterface/GradeBookUserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/userInterface/GradeBookUserInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/AddNewGradeBookTypeEnumToBaseGradeBookTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AddNewGradeBookTypeEnumToBaseGradeBookTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,10 +57,13 @@
       <recent name="D:\JetBrains\IntelliJ IDEA 2022.2.4\Projekty\grade-book\src\main\java\enums" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AddNewGradeBookTypeEnumToBaseGradeBookTests.testAddPropertyTypeToBaseGradeBook">
-    <configuration name="Program" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Program" />
+  <component name="RunManager" selected="JUnit.AddMultipleGradeBookTypeSupportToStartingUserInterfaceTests.testIncreasePartsCheckToThree">
+    <configuration name="AddMultipleGradeBookTypeSupportToStartingUserInterfaceTests.testIncreasePartsCheckToThree" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="grade-book" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="AddMultipleGradeBookTypeSupportToStartingUserInterfaceTests" />
+      <option name="METHOD_NAME" value="testIncreasePartsCheckToThree" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -96,12 +97,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="All in grade-book" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="grade-book" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AddNewGradeBookTypeEnumToBaseGradeBookTests.testAddPropertyTypeToBaseGradeBook" />
+        <item itemvalue="JUnit.AddMultipleGradeBookTypeSupportToStartingUserInterfaceTests.testIncreasePartsCheckToThree" />
         <item itemvalue="JUnit.AddNewGradeBookTypeEnumToBaseGradeBookTests" />
+        <item itemvalue="JUnit.All in grade-book" />
+        <item itemvalue="JUnit.AddNewGradeBookTypeEnumToBaseGradeBookTests.testAddPropertyTypeToBaseGradeBook" />
         <item itemvalue="JUnit.AddNewGradeBookTypeEnumToBaseGradeBookTests.createNewEnumGradeBookTypeTests" />
-        <item itemvalue="Application.Program" />
       </list>
     </recent_temporary>
   </component>
@@ -115,7 +125,8 @@
       <updated>1679228140288</updated>
       <workItem from="1679228141911" duration="4701000" />
       <workItem from="1679321644835" duration="5778000" />
-      <workItem from="1679403221914" duration="9121000" />
+      <workItem from="1679403221914" duration="9417000" />
+      <workItem from="1679487874018" duration="4506000" />
     </task>
     <task id="LOCAL-00001" summary="added the addition of a standard gradebook">
       <created>1679326800600</created>
@@ -124,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679326800600</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Adding ranked grade book and adding some unit tests">
+      <created>1679420889550</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1679420889550</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -143,6 +161,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added the addition of a standard gradebook" />
-    <option name="LAST_COMMIT_MESSAGE" value="added the addition of a standard gradebook" />
+    <MESSAGE value="Adding ranked grade book and adding some unit tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding ranked grade book and adding some unit tests" />
   </component>
 </project>
