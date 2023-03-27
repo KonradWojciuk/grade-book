@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88fab019-5ea1-42e5-95e3-20023c7abd9c" name="Changes" comment="Adding ranked grade book and adding some unit tests">
-      <change afterPath="$PROJECT_DIR$/src/test/java/AddMultipleGradeBookTypeSupportToStartingUserInterfaceTests.java" afterDir="false" />
+    <list default="true" id="88fab019-5ea1-42e5-95e3-20023c7abd9c" name="Changes" comment="fix AddMultipleGradeBookTypeSupportToStartingUserInterfaceTests and add testUpdateValidationMessage">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AddNewGradeBookTypeEnumToBaseGradeBookTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AddNewGradeBookTypeEnumToBaseGradeBookTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/AddMultipleGradeBookTypeSupportToStartingUserInterfaceTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AddMultipleGradeBookTypeSupportToStartingUserInterfaceTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +55,16 @@
       <recent name="D:\JetBrains\IntelliJ IDEA 2022.2.4\Projekty\grade-book\src\main\java\enums" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AddMultipleGradeBookTypeSupportToStartingUserInterfaceTests.testIncreasePartsCheckToThree">
+  <component name="RunManager" selected="JUnit.AddMultipleGradeBookTypeSupportToStartingUserInterfaceTests">
+    <configuration name="AddMultipleGradeBookTypeSupportToStartingUserInterfaceTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="grade-book" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="AddMultipleGradeBookTypeSupportToStartingUserInterfaceTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AddMultipleGradeBookTypeSupportToStartingUserInterfaceTests.testIncreasePartsCheckToThree" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="grade-book" />
       <option name="PACKAGE_NAME" value="" />
@@ -73,16 +80,6 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="AddNewGradeBookTypeEnumToBaseGradeBookTests" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AddNewGradeBookTypeEnumToBaseGradeBookTests.createNewEnumGradeBookTypeTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="grade-book" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="AddNewGradeBookTypeEnumToBaseGradeBookTests" />
-      <option name="METHOD_NAME" value="createNewEnumGradeBookTypeTests" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -107,11 +104,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AddMultipleGradeBookTypeSupportToStartingUserInterfaceTests" />
         <item itemvalue="JUnit.AddMultipleGradeBookTypeSupportToStartingUserInterfaceTests.testIncreasePartsCheckToThree" />
-        <item itemvalue="JUnit.AddNewGradeBookTypeEnumToBaseGradeBookTests" />
         <item itemvalue="JUnit.All in grade-book" />
+        <item itemvalue="JUnit.AddNewGradeBookTypeEnumToBaseGradeBookTests" />
         <item itemvalue="JUnit.AddNewGradeBookTypeEnumToBaseGradeBookTests.testAddPropertyTypeToBaseGradeBook" />
-        <item itemvalue="JUnit.AddNewGradeBookTypeEnumToBaseGradeBookTests.createNewEnumGradeBookTypeTests" />
       </list>
     </recent_temporary>
   </component>
@@ -127,6 +124,8 @@
       <workItem from="1679321644835" duration="5778000" />
       <workItem from="1679403221914" duration="9417000" />
       <workItem from="1679487874018" duration="4506000" />
+      <workItem from="1679512218395" duration="389000" />
+      <workItem from="1679917483533" duration="7339000" />
     </task>
     <task id="LOCAL-00001" summary="added the addition of a standard gradebook">
       <created>1679326800600</created>
@@ -142,7 +141,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679420889550</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Adding more unit tests and some dependencies to make writing these tests easier">
+      <created>1679512538754</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1679512538754</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,6 +168,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added the addition of a standard gradebook" />
     <MESSAGE value="Adding ranked grade book and adding some unit tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding ranked grade book and adding some unit tests" />
+    <MESSAGE value="Adding more unit tests and some dependencies to make writing these tests easier" />
+    <MESSAGE value="fix AddMultipleGradeBookTypeSupportToStartingUserInterfaceTests and add testUpdateValidationMessage" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix AddMultipleGradeBookTypeSupportToStartingUserInterfaceTests and add testUpdateValidationMessage" />
   </component>
 </project>
